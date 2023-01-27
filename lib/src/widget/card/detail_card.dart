@@ -2,7 +2,6 @@ import 'package:booking/src/app_theme/app_color.dart';
 import 'package:booking/src/app_theme/font_manager.dart';
 import 'package:booking/src/app_theme/values_manager.dart';
 import 'package:booking/src/utils/utils.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
