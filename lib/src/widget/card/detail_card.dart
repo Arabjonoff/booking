@@ -39,8 +39,8 @@ class DetailCard extends StatelessWidget {
           ),
           Expanded(child: Column(
             children: [
-              Text('data',style: TextStyle(color: AppColor.textColor,fontSize: FontSize.s20,fontWeight: FontWeightManager.semiBold,),),
-              Text('data',style: TextStyle(color: AppColor.textColor.withOpacity(0.7),fontSize: FontSize.s12,fontWeight: FontWeightManager.medium,),),
+              Text('data',style: TextStyle(color: AppColor.black,fontSize: FontSize.s20,fontWeight: FontWeightManager.semiBold,),),
+              Text('data',style: TextStyle(color: AppColor.black.withOpacity(0.7),fontSize: FontSize.s12,fontWeight: FontWeightManager.medium,),),
             ],
           ),),
         ],

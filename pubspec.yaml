@@ -43,6 +43,7 @@ dependencies:
   flutter_local_notifications: ^13.0.0
   syncfusion_flutter_datepicker: ^20.4.44
   onboarding_animation: ^0.0.2
+  pinput: ^2.2.21
 
 dev_dependencies:
   flutter_test:

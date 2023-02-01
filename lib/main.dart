@@ -1,13 +1,13 @@
-import 'package:booking/src/ui/onboarding/onboard_animate.dart';
-import 'package:booking/src/ui/onboarding/onboarding_screen.dart';
+import 'package:booking/src/router/routers.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
-
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+   MyApp({super.key});
+  final _route = RouterGenerator();
+
 
   // This widget is the root of your application.
   @override
@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: OnboardAnimate()
+      initialRoute: '/onboard',
+      onGenerateRoute: _route.onGenerator,
     );
   }
 }

@@ -35,7 +35,7 @@ class HomeCard extends StatelessWidget {
               style: TextStyle(
                 fontSize: FontSize.s20,
                 fontWeight: FontWeightManager.semiBold,
-                color: AppColor.textColor,
+                color: AppColor.black,
               ),
             )
           ],

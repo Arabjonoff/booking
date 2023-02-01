@@ -35,7 +35,7 @@ class OnboardScreen extends StatelessWidget {
                   padding:  EdgeInsets.only(left: 20*w),
                   child: SizedBox(
                     width: 240*w,
-                      child: Text(title,style: TextStyle(fontSize: FontSize.s30,fontWeight: FontWeightManager.bold,color: AppColor.textColor),)),
+                      child: Text(title,style: TextStyle(fontSize: FontSize.s30,fontWeight: FontWeightManager.bold,color: AppColor.black),)),
                 ),
                 SizedBox(height: 20*h,),
                 Padding(

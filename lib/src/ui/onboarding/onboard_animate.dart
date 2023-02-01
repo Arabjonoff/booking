@@ -104,7 +104,7 @@ class _OnboardAnimateState extends State<OnboardAnimate> {
                 ),
               );
             }
-          },),
+          }, color: AppColor.blue,),
           SizedBox(
             height: 34 * h,
           ),
