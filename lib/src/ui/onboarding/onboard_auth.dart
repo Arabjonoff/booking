@@ -43,7 +43,10 @@ class OnboardAuth extends StatelessWidget {
                     child: Text('Shaxsiy hisob bo’lsa kirish tugmasiga bosing.Profilingiz yoq bolsa ro’yhatdan o’ting.',style: Styles.regularBody(AppColor.white),),
                   ),
                   const Spacer(),
-                  ButtonWidget(text: "Kirish", onTap: (){}, color: AppColor.blue,),
+                  ButtonWidget(text: "Kirish", onTap: (){
+                    Navigator.pushNamed(context, '/login');
+
+                  }, color: AppColor.blue,),
                   const SizedBox(height: 20,),
                   ButtonWidget(text: "Ro'yhatdan o'tish", onTap: (){
                     Navigator.pushNamed(context, '/register');

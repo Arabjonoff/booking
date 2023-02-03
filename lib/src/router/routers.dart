@@ -1,3 +1,4 @@
+import 'package:booking/src/ui/auth/login_screen.dart';
 import 'package:booking/src/ui/auth/register_screen.dart';
 import 'package:booking/src/ui/auth/verfication_screen.dart';
 import 'package:booking/src/ui/bottom_menu/main_screen.dart';
@@ -10,6 +11,8 @@ class RouterGenerator{
     switch(settings.name){
       case '/register':
         return _navigate( const RegisterScreen());
+      case '/login':
+        return _navigate( LoginScreen());
       case '/onboard':
         return _navigate( const OnboardAnimate());
       case '/verfication':
