@@ -1,5 +1,6 @@
 import 'package:booking/src/ui/auth/register_screen.dart';
 import 'package:booking/src/ui/auth/verfication_screen.dart';
+import 'package:booking/src/ui/bottom_menu/main_screen.dart';
 import 'package:booking/src/ui/onboarding/onboard_animate.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +14,8 @@ class RouterGenerator{
         return _navigate( const OnboardAnimate());
       case '/verfication':
         return _navigate( const VerficationScreen());
+      case '/main':
+        return _navigate( const MainScreen());
     }
   }
 

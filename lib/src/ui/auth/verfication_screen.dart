@@ -41,7 +41,9 @@ class VerficationScreen extends StatelessWidget {
                ),
              ],
            )),
-            ButtonWidget(text: "Davom etish", onTap: (){}, color: AppColor.blue),
+            ButtonWidget(text: "Davom etish", onTap: (){
+              Navigator.pushNamed(context, '/main');
+            }, color: AppColor.blue),
             const SizedBox(height: 32,),
 
           ],

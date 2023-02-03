@@ -44,6 +44,7 @@ dependencies:
   syncfusion_flutter_datepicker: ^20.4.44
   onboarding_animation: ^0.0.2
   pinput: ^2.2.21
+  flutter_svg: ^1.1.6
 
 dev_dependencies:
   flutter_test:
