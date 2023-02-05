@@ -12,7 +12,7 @@ class OnboardAuth extends StatelessWidget {
       backgroundColor: AppColor.bg,
       body: Stack(
         children: [
-          Image.asset('assets/images/bgimage.png',fit: BoxFit.cover,),
+          Image.asset('assets/images/bgimage.png',fit: BoxFit.cover,width: MediaQuery.of(context).size.width,),
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(

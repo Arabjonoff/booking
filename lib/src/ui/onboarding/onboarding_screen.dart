@@ -18,7 +18,7 @@ class OnboardScreen extends StatelessWidget {
       body: Stack(
         children: [
           SizedBox(
-            height: 484*h,
+            height: 484*w,
             width: MediaQuery.of(context).size.width,
             child: Column(
               children: [

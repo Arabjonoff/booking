@@ -45,7 +45,8 @@ dependencies:
   onboarding_animation: ^0.0.2
   pinput: ^2.2.21
   flutter_svg: ^1.1.6
-  just_audio: ^0.9.31
+  mask_text_input_formatter: ^2.4.0
+  intl: ^0.18.0
 
 dev_dependencies:
   flutter_test:
