@@ -1,4 +1,5 @@
 import 'package:booking/src/app_theme/app_color.dart';
+import 'package:booking/src/ui/bottom_menu/booking/booking_screen.dart';
 import 'package:booking/src/ui/bottom_menu/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -84,12 +85,9 @@ class _MainScreenState extends State<MainScreen> {
     const HomeScreen(),
       Container(
         alignment: Alignment.center,
-        child: Text("sms",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
-      ),
-      Container(
-        alignment: Alignment.center,
         child: Text("Buyurtam",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
       ),
+      BookingScreen(),
       Container(
         alignment: Alignment.center,
         child: Text("LOtaipn",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),

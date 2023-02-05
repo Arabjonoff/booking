@@ -56,8 +56,8 @@ class Styles{
   static TextStyle regularH3(Color color) {
     return TextStyle(
       fontStyle: FontStyle.normal,
-      fontWeight: FontWeight.w600,
-      fontSize: 20,
+      fontWeight: FontWeight.bold,
+      fontSize: 18,
       height: 1.35,
       color: color,
     );
@@ -118,6 +118,15 @@ class Styles{
       fontStyle: FontStyle.normal,
       fontWeight: FontWeight.normal,
       fontSize: 13,
+      color: color,
+    );
+  }
+
+  static TextStyle regularh2(Color color) {
+    return TextStyle(
+      fontStyle: FontStyle.normal,
+      fontWeight: FontWeight.bold,
+      fontSize: 15,
       color: color,
     );
   }

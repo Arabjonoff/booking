@@ -1,22 +1,24 @@
 import 'package:booking/src/app_theme/app_color.dart';
 import 'package:booking/src/app_theme/style.dart';
 import 'package:booking/src/utils/utils.dart';
+import 'package:booking/src/widget/booking/booking_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class BookingScreen extends StatefulWidget {
+  const BookingScreen({Key? key}) : super(key: key);
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<BookingScreen> createState() => _BookingScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _BookingScreenState extends State<BookingScreen> {
   int _index = 0;
   List data = [
-    'Faol buyurtmalar ',
-    'O\'tib ketgan buyurtmalar',
-    'Bekor qilingan buyurtmalar',
+    'Samovarlar',
+    'Shifoxonalar',
+    'Kafe va Restoranlar',
+    'Mashhulot zallar',
   ];
 
   @override
@@ -27,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: AppColor.bg,
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Asosiy'),
+        title: Text('Band qilish'),
         foregroundColor: AppColor.black,
         backgroundColor: AppColor.bg,
         elevation: 0,
@@ -74,6 +76,14 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
+      body: ListView.builder(itemBuilder: (ctx, index) {
+        return BookingCardWidget(
+          image: 'assets/images/img.png',
+          name: 'Anhor choyxonasi',
+          address: 'Andijon shahar, Boburshox ko’chasi',
+          workingTime: 'workingTime',
+        );
+      }),
     );
   }
 }
