@@ -78,7 +78,11 @@ class _BookingScreenState extends State<BookingScreen> {
       ),
       body: ListView.builder(itemBuilder: (ctx, index) {
         return BookingCardWidget(
+          onTap: (){
+            Navigator.pushNamed(context, '/bookingDetail',arguments: index);
+          },
           image: 'assets/images/img.png',
+          tag: index,
           name: 'Anhor choyxonasi',
           address: 'Andijon shahar, Boburshox ko’chasi',
           workingTime: 'workingTime',
