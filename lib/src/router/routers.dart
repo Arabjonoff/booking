@@ -3,6 +3,7 @@ import 'package:booking/src/ui/auth/register_screen.dart';
 import 'package:booking/src/ui/auth/verfication_screen.dart';
 import 'package:booking/src/ui/bottom_menu/booking/booking_detail_screen.dart';
 import 'package:booking/src/ui/bottom_menu/booking/booking_room_detail.dart';
+import 'package:booking/src/ui/bottom_menu/booking/order/bookin_order_screen.dart';
 import 'package:booking/src/ui/bottom_menu/main_screen.dart';
 import 'package:booking/src/ui/onboarding/onboard_animate.dart';
 import 'package:flutter/material.dart';
@@ -25,6 +26,8 @@ class RouterGenerator{
         return _navigate( const MainScreen());
       case '/bookingRoom':
         return _navigate( const BookingRoomScreen());
+      case '/bookingOrder':
+        return _navigate( const BookingOrderScreen());
       case '/bookingDetail':
         return _navigate(  BookingDetailScreen(tag: args as int,));
       case '/bookingRoomDetail':

@@ -40,7 +40,7 @@ class BookingRoomScreen extends StatelessWidget {
                 Container(
                   height: double.infinity,
                   decoration: BoxDecoration(
-                    color: index !=2?Colors.black26:Colors.red.withOpacity(0.5),
+                    color: index !=2 && index!=7?Colors.black26:Colors.red.withOpacity(0.5),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Column(

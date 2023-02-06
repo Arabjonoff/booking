@@ -47,14 +47,13 @@ class BookingRoomDetailScreen extends StatelessWidget {
             delegate: SliverChildListDelegate(
               [
                 Container(
-
                   margin: const EdgeInsets.symmetric(horizontal: 16),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(height: 20*h,),
                       ButtonWidget(text: 'Band qilish', onTap: (){
-                        Navigator.pushNamed(context, '/bookingRoom');
+                        Navigator.pushNamed(context, '/bookingOrder');
                       }, color: Colors.black),
                       SizedBox(height: 20*h,),
                       Text(

@@ -28,19 +28,22 @@ class ButtonWidget extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [AppColor.gradient1, AppColor.gradient2],
+          colors: [
+            AppColor.gradient1,
+            AppColor.gradient2,
+            AppColor.gradient3,
+          ],
         ),
       ),
       height: 57 * w,
       margin: EdgeInsets.symmetric(horizontal: 20 * w),
       width: MediaQuery.of(context).size.width,
       child: ElevatedButton(
-        onPressed:onTap,
+        onPressed: onTap,
         style: ElevatedButton.styleFrom(
-          shape: const StadiumBorder(),
-          backgroundColor: Colors.transparent,
-          elevation: 1111
-        ),
+            shape: const StadiumBorder(),
+            backgroundColor: Colors.transparent,
+            elevation: 1111),
         child: Text(
           text,
           style: TextStyle(
