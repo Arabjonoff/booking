@@ -42,10 +42,11 @@ dependencies:
   sqflite: ^2.2.3
   flutter_local_notifications: ^13.0.0
   onboarding_animation: ^0.0.2
-  pinput: ^2.2.21
+  pinput: ^2.2.23
   flutter_svg: ^1.1.6
   mask_text_input_formatter: ^2.4.0
   intl: ^0.18.0
+  syncfusion_flutter_datepicker: ^20.4.49
 
 dev_dependencies:
   flutter_test:
