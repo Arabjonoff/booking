@@ -11,7 +11,15 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
+
+  TabController? _tabBarController;
+
+  @override
+  initState() {
+    _tabBarController = TabController(length: data.length, vsync: this);
+    super.initState();
+  }
   int _index = 0;
   List data = [
     'Faol buyurtmalar ',
@@ -44,33 +52,29 @@ class _HomeScreenState extends State<HomeScreen> {
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(kToolbarHeight * h),
           child: SizedBox(
-            height: 45 * h,
-            child: ListView.builder(
-                itemCount: data.length,
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (ctx, index) {
-                  return GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        _index = index;
-                      });
-                    },
-                    child: Container(
-                      margin: EdgeInsets.symmetric(horizontal: 5 * w),
-                      padding: EdgeInsets.symmetric(horizontal: 20 * w),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: _index == index ? AppColor.blue : AppColor.grey,
-                      ),
-                      child: Center(
-                          child: Text(
-                        data[index],
-                        style: Styles.regularh2(
-                            _index == index ? AppColor.white : AppColor.black),
-                      )),
-                    ),
-                  );
-                }),
+            height: 50 * h,
+            child: TabBar(
+              unselectedLabelColor: AppColor.black.withOpacity(0.5),
+              padding: EdgeInsets.only(left: 16 * w, top: 7 * w),
+              isScrollable: true,
+              indicatorColor: AppColor.blue,
+              labelColor: AppColor.white,
+              indicator: ShapeDecoration(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                color: AppColor.blue,
+              ),
+              labelStyle: TextStyle(
+                fontSize: 20 * h,
+              ),
+              controller: _tabBarController,
+              tabs: data.map((e) {
+                return Tab(
+                  text: e,
+                );
+              }).toList(),
+            ),
           ),
         ),
       ),

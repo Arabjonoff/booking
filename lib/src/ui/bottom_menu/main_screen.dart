@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../widget/bottom_navigate/bottom_navigate_widget.dart';
+import 'location/location_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -88,10 +89,7 @@ class _MainScreenState extends State<MainScreen> {
         child: Text("Buyurtam",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
       ),
       BookingScreen(),
-      Container(
-        alignment: Alignment.center,
-        child: Text("LOtaipn",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
-      ),
+      LocationScreen(),
       Container(
         alignment: Alignment.center,
         child: Text("Profile",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
